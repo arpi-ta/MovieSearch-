@@ -1,0 +1,50 @@
+*{
+
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(244,244,244);
+color: #333;
+ }
+
+
+ p {
+  font-size: 1.6rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width:1000px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 4.4rem;
+  text-align: center
+}
+
+.form {
+  display:grid;
+}
+
+.label {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+
