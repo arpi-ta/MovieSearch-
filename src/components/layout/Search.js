@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import MovieCard from "./MovieCard";
 
 const FormStyle={
     width:'80%',
@@ -64,19 +65,7 @@ export default function SearchMovies(){
         </form>
         <div className="card-list">
             {movies.filter(movie => movie.poster_path).map(movie=>(
-                <div className="card" key={movie.id}>
-                    <img className="card--image"
-                            src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2/${movie.poster_path}`}
-                            alt={movie.title + ' poster'}
-                            />
-                    <div className="card-content">
-
-                        <div className="card-title">
-                            <h3>{movie.original_title}</h3>
-                            <p>{movie.overview}</p>
-                        </div>
-                 </div>
-                  </div>
+                <MovieCard movie={movie} />
 
             ))}
        
